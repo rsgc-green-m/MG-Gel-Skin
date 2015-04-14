@@ -1,11 +1,13 @@
 // Create Canvas 
 void setup() {
   size(600, 600);
+  noStroke();
 }
 
 void draw() {
   //background(0); //white
 
+  
   fill(#4DFF03);
   // text("x: " + mouseX, mouseX, mouseY-15);
   // text("y: " + mouseY, mouseX, mouseY-5);
