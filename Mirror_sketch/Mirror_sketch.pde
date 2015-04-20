@@ -5,12 +5,15 @@ void setup() {
 }
 
 void draw() {
-  //background(0); //white
+  float w = width;
+  float h = height;
+  fill(#4DFF03);
+  translate(width/2, 0); 
+  ellipse(mouseX - width/2, mouseY, 10, 10);
+  ellipse((mouseX - width/2)*-1, mouseY, 10, 10);
+}
+void keyPressed() {
+  background(255);
 
   
-  fill(#4DFF03);
-  // text("x: " + mouseX, mouseX, mouseY-15);
-  // text("y: " + mouseY, mouseX, mouseY-5);
-  ellipse(mouseX, mouseY, 10, 10);
-  ellipse(mouseX, mouseY+100, 10, 10);
 }
