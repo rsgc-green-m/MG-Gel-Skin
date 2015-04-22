@@ -3,7 +3,8 @@ float lastY = 0;
 // Create Canvas 
 void setup() {
   size(600, 600);
-  //noStroke();
+  strokeWeight(5);
+  background(255);
 }
 
 void draw() {
@@ -19,10 +20,13 @@ void draw() {
   lastX = mouseX - width/2;
   lastY = mouseY;
   
+
+  
 }
 
 void keyPressed() {
-  background(255);
-
   
+  if (key == 'c'){
+    background(255);
+  }
 }
