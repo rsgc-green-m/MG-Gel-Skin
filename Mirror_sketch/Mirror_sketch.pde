@@ -42,8 +42,12 @@ void keyPressed() {
 
 if (key == '1'){
   strokeWeight( strokeSize + 1);
-  strokeSize = strokeSize +1;
+  strokeSize = strokeSize + 1;
   }
 
+if (key == '2'){
+  strokeWeight( strokeSize - 1);
+  strokeSize = strokeSize - 1;
+  }
 
 }
