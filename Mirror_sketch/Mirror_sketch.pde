@@ -1,6 +1,6 @@
 float lastX = 0;
 float lastY = 0;
-float strokeSize = 5;
+float strokeSize = 5; 
 
 // Create Canvas 
 
@@ -8,6 +8,7 @@ void setup() {
   size(600, 600);
   strokeWeight(5);
   background(255);
+  colorMode(HSB, 360, 100, 100);
 }
 
 void draw() {
@@ -32,22 +33,49 @@ void draw() {
    
 }
 
-// Clearing the canvas
-
 void keyPressed() {
-  
-  if (key == 'c'){
-    background(255);
+//Clear page
+if (key == 'c'){
+  background(359, 0, 99);
   }
-
-if (key == '1'){
+//Stroke Increase
+if (key == '='){
   strokeWeight( strokeSize + 1);
   strokeSize = strokeSize + 1;
   }
-
-if (key == '2'){
+//Stroke Decrease
+if (key == '-'){
   strokeWeight( strokeSize - 1);
   strokeSize = strokeSize - 1;
+   }
+  
+//Black  
+if (key == '1'){
+  stroke(207, 99, 1);
+  }
+//Blue
+if (key == '2'){
+  stroke(231, 98, 99);
+  }
+//Red
+if (key == '3'){
+  stroke(355, 98, 99);
+  }
+//Purple  
+if (key == '4'){
+  stroke(279, 99, 99);
+  }
+//Green
+if (key == '5'){
+  stroke(115, 99, 99);
+  }
+//Yelllow 
+if (key == '6'){
+  stroke(62, 99, 99);
+  }
+// white/eraser
+if (key == '0'){
+  stroke(62, 0, 99);
   }
 
 }
